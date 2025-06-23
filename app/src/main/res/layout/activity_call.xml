@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CallActivity">
+        />
+    <pl.droidsonroids.gif.GifImageView
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:src="@drawable/animation"
+    />
+<!--    <ImageView-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="180dp"-->
+<!--        android:src="@drawable/hello_5129597"-->
+<!--        />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey User"
+        android:id="@+id/hey_user_text_view"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the ID to Start"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bolditalic"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Enter Recipent's ID"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/user_id_edit_text"
+            android:layout_toLeftOf="@id/voice_call_btn"
+            android:layout_centerVertical="true"/>
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/voice_call_btn"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toLeftOf="@+id/video_call_btn"
+            />
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/video_call_btn"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
